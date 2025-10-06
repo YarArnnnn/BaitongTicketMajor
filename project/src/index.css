@@ -5,13 +5,62 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  background-color: #ffffff;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+* { box-sizing: border-box; }
+html, body, #root { height: 100%; width: 100%; }
+body { margin: 0; font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; }
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: inherit;
+} 
+
+.brand:hover {opacity: .9;}
+
+.logo {
+  width: 32px;
+  height: 32px;
+  display: block;
+  object-fit: contain;
+}
+
+.app {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+} 
+
+.site-header, .site-footer {
+  background: #234c6a;
+  border-bottom: 1px solid #242428;
+
+}
+
+.site-footer { 
+  border-bottom: 0; 
+  border-top: 1px solid #242428; 
+  color: #b9bac1;}
+
+.container {
+  flex: 1;
+  background: #ffffff;
+  color: #111;
+}
+
+.container-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 24px 20px;
+} 
 
 a {
   font-weight: 500;
@@ -24,10 +73,11 @@ a:hover {
 
 body {
   margin: 0;
-  display: flex;
-  place-items: center;
+  display: block;
+  place-items: initial;
   min-width: 320px;
   min-height: 100vh;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
 }
 
 h1 {
